@@ -1,0 +1,58 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 40px;
+    color: rgb(250, 248, 248);
+    text-align: center;
+    /* text-decoration: line-through; */
+    background-color: rgba(74, 65, 65, 0.202);
+    padding: 10px;
+    border-bottom: 2px solid rgba(49, 78, 77, 0.202);
+    /* border: 3px solid rgb(247, 243, 243); */
+    
+}
+
+#img1{
+    width: 100px;
+    position: absolute;
+    top: 170px;
+    left: 46%;
+}
+
+main{
+    background-image: url("https://cdn.pixabay.com/photo/2016/10/20/18/35/earth-1756274_1280.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+#img2{
+    position: absolute;
+    top: 100px;
+    width: 300px;
+}
+
+#img3{
+    position: absolute;
+    top: 100px;
+    width: 300px;
+    left: 250px;
+
+}
+
+#img4{
+    /* position:absolute; */
+    bottom: 0;
+    width: 100px;
+}
+
+#img5{
+    width: 300px;
+    position: absolute;
+    top: 150px;
+    left: 38%;
+
+}

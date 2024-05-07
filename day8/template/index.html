@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        img{
+            width: 100%;
+        }
+
+        .container{
+            background-image: url({{img}});
+            height: 100vh;
+            display: flex;
+            justify-content: flex-end;
+            
+        }
+        .container>div{
+            padding: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+
+            <h1>Name : {{name}}</h1>
+            <h2>Age : {{age}} </h2>
+            <h2>Gender : {{gender}} </h2>
+        </div>
+    </div>
+
+    <!-- <img src={{img}} alt=""> -->
+</body>
+</html>

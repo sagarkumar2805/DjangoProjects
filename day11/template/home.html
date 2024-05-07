@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creative Landing Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0; /* Light grey */
+    }
+
+    header {
+        background-color: #f6f4f6b8; /* Dark purple */
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    nav {
+        background-color: #201f21; /* Light purple */
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav a {
+        display: inline-block;
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        background-color: #d45087; /* Pink */
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #833c9f; /* Dark purple */
+    }
+
+    p {
+        font-size: 1.2em;
+        line-height: 1.6;
+        color: #555;
+    }
+
+    .hero {
+        position: relative;
+        height: 400px;
+        background-image: url('https://via.placeholder.com/1500x400'); /* Placeholder image, replace with your image */
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
+    .hero .cta-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #d45087; /* Pink */
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .hero .cta-button:hover {
+        background-color: #ff7eb9; /* Lighter pink */
+    }
+
+    footer {
+        background-color: #151515; /* Dark purple */
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <a href="{% url 'login' %}">Login</a>
+    </nav>
+    <section class="hero">
+        <div>
+            <h1>Your Catchy Headline Here</h1>
+            <p>A brief description of your product or service.</p>
+            <a href="#" class="cta-button">Learn More</a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>

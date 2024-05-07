@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1 {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 600;
+
+        /* color: white; */
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .home {
+        opacity: 0.3;
+        background-size: cover;
+        /* background-image: url("https://cdn.pixabay.com/photo/2020/09/23/19/58/halloween-5596921_1280.jpg"); */
+        background-image: url("https://cdn.pixabay.com/photo/2015/02/25/14/51/women-648911_1280.png");
+        height: 80vh;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 400px;
+        border-radius: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+        align-items: center;
+        gap: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        /* font-size: 18px; */
+        /* padding: 20px; */
+        /* border: 1px solid; */
+        /* padding: 10px 20px; */
+
+    }
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .wrapper {
+        display: flex;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background-image: url("https://cdn.pixabay.com/photo/2019/09/29/22/06/light-bulb-4514505_1280.jpg");
+        background-size: cover;
+        background-position: right;
+        justify-content: center;
+    }
+    .home-content{
+        position: absolute;
+        top: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        left: 0%;
+        transform: translate(320%,-50%);
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="home">
+        </div>
+    </div>
+    <div class="home-content">
+        <h1>app1 home</h1>
+        <div class="nav-links">
+            <a href="{% url 'app1:login' %}" class="btn">Login First</a>
+            <a href="{% url 'app2:index' %}" class="btn">navigate to app2 index</a>
+        </div>
+    </div>
+</body>
+
+</html>
