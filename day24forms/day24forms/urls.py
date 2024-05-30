@@ -1,5 +1,5 @@
 """
-URL configuration for day23forms project.
+URL configuration for day24forms project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -16,9 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app1.views import registerForm
+from app1.views import employeeRegisterForm
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('register/',registerForm)
+    path('register/',employeeRegisterForm)
 ]
